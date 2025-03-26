@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, sans-serif; color: white
+  margin: 0;
+  padding: 0;
+  background-color: #6666ff; /*
+#f4f4f4 */
+}
+
+.left, .right {
+  font-family: 'Verdana', sans-serif;  /* Jenis font untuk bagian kiri dan kanan */
+  color: #ffff00
+;  /* Warna font (kuning terang) */
+}
+
+header {
+  background-color: #000099
+; /* #333 */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  padding: 20px;
+}
+
+.left, .right {
+  flex: 1;
+  padding: 20px;
+}
+
+.left h2, .right h2 {
+  color: #1a1a00;
+}
+
+.left ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.left li {
+  margin-bottom: 10px;
+}
+
+/* Tabel Pengalaman Kerja */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #660000;
+}
+
+tr:nth-child(even) {
+  background-color: #4d0000;
+}
+
+tr:hover {
+  background-color: #ddd;
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.photo-gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Styling untuk sertifikat */
+.certificates-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.certificates-list li {
+  margin: 10px 0;
+}
+
+.certificates-list a {
+  text-decoration: none;
+  color: #ff9900;
+  font-size: 16px;
+}
+
+.certificates-list a:hover {
+  text-decoration: underline;
+}
+
+/* Styling untuk contact section */
+.contact {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 50%;  /* Setengah lebar layar */
+  margin: 0 auto;  /* Tengah-kan elemen */
+}
+
+.contact a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #ff9900;
+  color: white;
+}
+
+/* Styling untuk feedback message */
+#feedbackMessage {
+  font-size: 16px;
+  color: #28a745;  /* Warna hijau untuk pesan sukses */
+  margin-top: 20px;
+}
+
+/* Styling untuk button */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

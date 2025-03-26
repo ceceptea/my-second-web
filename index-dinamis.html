@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Saya</title>
+  <link rel="stylesheet" href="css-html-jv.css">
+</head>
+<body>
+  <header>
+    <h1>YOSEPH HENDRIK MATURBONGS</h1>
+    <p>Saya adalah seorang profesional dibidang Ilmu Komunikasi & Teknologi Informasi.</p>
+    <p id="timeDisplay">Waktu saat ini: --:--:--</p>
+  </header>
+
+  <section class="content">
+    <div class="left">
+      <h2>Latar Belakang Pendidikan</h2>
+      <p>Deskripsi pendidikan...</p>
+
+      <h2>Pengalaman Kerja</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Posisi</th>
+            <th>Perusahaan</th>
+            <th>Periode Menjabat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Manajer Proyek</td>
+            <td>PT Andalan</td>
+            <td>2010 - Saat ini</td>
+          </tr>
+          <tr>
+            <td>Analisis Sistem</td>
+            <td>PT Trisula</td>
+            <td>2000 - 2010</td>
+          </tr>
+          <tr>
+            <td>Developer</td>
+            <td>PT Agro</td>
+            <td>1991 - 2000</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Kontak Saya</h2>
+      <form id="contactForm" onsubmit="handleFormSubmit(event)">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Pesan:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit">Kirim Pesan</button>
+      </form>
+
+      <p id="feedbackMessage"></p>
+    </div>
+
+    <div class="right">
+      <h2>Foto Terbaru Saya</h2>
+      <div class="photo-gallery">
+        <figure>
+          <img src="images/profil-1.jpg" alt="Foto 1" width="200" onclick="openImage(this)">
+          <figcaption>Foto seminar 2023</figcaption>
+        </figure>
+        <figure>
+          <img src="images/profil-2.jpg" alt="Foto 2" width="200" onclick="openImage(this)">
+          <figcaption>Konferensi internasional</figcaption>
+        </figure>
+        <figure>
+          <img src="images/profil-3.jpg" alt="Foto 3" width="200" onclick="openImage(this)">
+          <figcaption>Di kantor</figcaption>
+        </figure>
+      </div>
+
+      <button onclick="changeBackgroundColor()">Ganti Warna Latar Belakang</button>
+
+      <h2 onclick="toggleCertificates()" style="cursor:pointer">Sertifikat yang Telah Diperoleh (klik untuk tampil/sembunyi)</h2>
+      <ul id="certificates" class="certificates-list">
+        <li><a href="images/sertifikat-audit.pdf" target="_blank">Sertifikat Audit Sistem Informasi</a></li>
+        <li><a href="images/sertifikat-jaringan.pdf" target="_blank">Sertifikat Infrastruktur Jaringan</a></li>
+        <li><a href="images/sertifikat-literasi.pdf" target="_blank">Sertifikat Narasumber Literasi Digital</a></li>
+        <li><a href="images/sertifikat-lainnya.pdf" target="_blank">Sertifikat Lainnya</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="contact">
+    <p>Hubungi saya: <a href="mailto:yoseph.hendrik@gmail.com">yoseph.hendrik@gmail.com</a></p>
+  </div>
+
+  <footer>
+    <p>Copyright @2025 Yoseph Hendrik</p>
+  </footer>
+
+  <script src="script-dinamis.js"></script>
+</body>
+</html>
